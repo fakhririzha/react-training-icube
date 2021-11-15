@@ -19,9 +19,25 @@
 
 .navbar__item {
     list-style-type: none;
+    padding: .75rem .25rem;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background: #13242A;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+
+        a {
+            text-decoration: underline 2px;
+            text-underline-offset: 5px;
+            transition: all 0.4s ease-in-out;
+        }
+    }
     
     a {
         color: #E9C46A;
         text-decoration: none;
+        transition: all 0.4s ease-in-out;
     }
 }
