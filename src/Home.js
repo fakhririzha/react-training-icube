@@ -11,10 +11,10 @@ const Home = () => {
 	return (
 		<div className="home">
 			<Nav />
-			<Outlet />
 			<main className="home__mainContent">
 				<h1>Food-O-Licious!</h1>
 			</main>
+			<Outlet />
 		</div>
 	);
 };
