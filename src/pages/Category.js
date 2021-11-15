@@ -3,7 +3,11 @@ import { useParams } from "react-router-dom";
 
 import axios from "axios";
 
+const capitalize = (s) => s && s[0].toUpperCase() + s.slice(1);
+
 const fetchDataFromAPI = async (categoryName) => {
+	categoryName = capitalize(categoryName);
+
 	return await axios
 		.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryName}`)
 		.then(({ data }) => data.meals)

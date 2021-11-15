@@ -1,11 +1,20 @@
+.navbar__wrapper {
+    margin: 1rem 2.5%;
+}
+
 .navbar__nav {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 75% 25%;
+
+    ul {
+        padding: 0;
+    }
 }
 
 .navbar__items {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    text-align: center;
 }
 
 .navbar__item {
