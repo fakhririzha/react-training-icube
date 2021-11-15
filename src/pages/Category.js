@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "./Category.scss";
 
 import axios from "axios";
 
@@ -30,17 +31,18 @@ const Category = () => {
 		);
 	}, [categoryName]);
 
-	console.log(meal);
-
 	return (
 		<div className="category">
-			{/* <pre>{JSON.stringify(meal, null, 2)}</pre> */}
-			<div className="category_items">
+			<div className="category__items">
 				{(meal &&
 					meal.map((meal) => (
 						<div className="category__item" key={meal.idMeal}>
-							<h1>{meal.strMeal}</h1>
-							<img src={meal.strMealThumb} alt={meal.strMeal} />
+							<figure>
+								<img src={meal.strMealThumb} alt={meal.strMeal} />
+								<figcaption>
+									<span>{meal.strMeal}</span>
+								</figcaption>
+							</figure>
 						</div>
 					))) ||
 					"Loading..."}
