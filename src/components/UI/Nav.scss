@@ -1,0 +1,18 @@
+.navbar__nav {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.navbar__items {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.navbar__item {
+    list-style-type: none;
+    
+    a {
+        color: #E9C46A;
+        text-decoration: none;
+    }
+}
