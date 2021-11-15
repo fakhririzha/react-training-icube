@@ -33,6 +33,7 @@ const Category = () => {
 
 	return (
 		<div className="category">
+			<h4>{categoryName}</h4>
 			<div className="category__items">
 				{(meal &&
 					meal.map((meal) => (
